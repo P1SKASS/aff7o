@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', serif;
+    font-family: 'Inter', serif;
 }
 
 body {
@@ -22,6 +22,7 @@ body {
 
 .logo {
     height: 60px;
+    transform: scale(1.4);
 }
 
 .nav-links {
@@ -57,12 +58,11 @@ body {
 }
 
 .partner-button {
-    background: linear-gradient(135deg, #FFD701 0%, #FFF7B0 33%, #FFF175 73%, #EDCD17 100%);
+    background: #FFD701;
     border: none;
     border-radius: 25px;
     padding: 10px 25px;
     font-size: 24px;
-    font-family: 'Georgia', serif;
     cursor: pointer;
     color: black;
     transition: transform 0.2s;
@@ -81,7 +81,6 @@ body {
     padding: 40px 20px;
     width: 90%;
     color: #000;
-    font-family: 'Georgia', serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -107,7 +106,7 @@ body {
 }
 
 .monkey-button {
-    background: linear-gradient(135deg, #FFD701 0%, #FFF7B0 33%, #FFF175 73%, #EDCD17 100%);
+    background: #FFD701;
     color: black;
     padding: 12px 25px;
     font-size: 18px;
@@ -130,6 +129,19 @@ body {
     max-width: 500px;
     height: auto;
     border-radius: 15px;
+}
+
+.afMonD{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.afMonP{
+    margin-right: 10%;
+    color: #20102C;
+    font-size: 24px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    font-family: Abhaya Libre ExtraBold, sans-serif;
 }
 
 /* Why Earn Section */
@@ -259,7 +271,7 @@ body {
 
 .commissions-title {
     font-size: 42px;
-    font-family: "Times New Roman", serif;
+    font-family: "Inter", serif;
     margin-bottom: 20px;
 }
 
@@ -290,13 +302,7 @@ body {
     height: 162px;
     border-radius: 16px;
     padding: 20px;
-    background: linear-gradient(
-            135deg,
-            #FFD723 0%,
-            #FEF5AB 25%,
-            #D5AD20 74%,
-            #FCD781 95%
-    );
+    background: #FFD701;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     text-align: center;
     display: flex;
@@ -310,16 +316,13 @@ body {
 }
 
 .commission-card h3 {
-    font-family: 'Racing Sans One', cursive;
     font-size: 24px;
     font-weight: bold;
-    font-style: italic;
     color: black;
     margin-bottom: 20px;
 }
 
 .commission-card p {
-    font-family: 'Rhodium Libre', serif;
     font-size: 16px;
     color: black;
 }
@@ -330,14 +333,7 @@ body {
     font-size: 24px;
     border-radius: 32px;
     border: none;
-    background: linear-gradient(
-            135deg,
-            #FFD723 0%,
-            #FEF5AB 25%,
-            #D5AD20 74%,
-            #FCD781 95%
-    );
-    font-family: 'Times New Roman', serif;
+    background: #FFD701;
     cursor: pointer;
     color: black;
     font-weight: bold;
@@ -367,4 +363,99 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
+
+.about-us-section {
+    width: 90%;
+    margin: 80px auto;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+}
+
+.about-title {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.about-subtitle {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.about-text {
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-list {
+    font-size: 24px;
+    line-height: 1.6;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.faq-section {
+    width: 90%;
+    margin: 60px auto;
+    color: white;
+}
+
+.faq-title {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 16px 24px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #39004E 0%, #20102C 100%);
+    border: none;
+    border-radius: 14px;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.3s;
+}
+
+.faq-question::after {
+    content: "⌄";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+
+.faq-question.active::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 0 24px;
+    font-size: 20px;
+    border-radius: 0 0 14px 14px;
+}
+
+.faq-answer p {
+    margin: 16px 0;
+    line-height: 1.6;
 }

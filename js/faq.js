@@ -1,4 +1,4 @@
-    const questions = document.querySelectorAll('.faq-question');
+   const questions = document.querySelectorAll('.faq-question');
 
     questions.forEach(q => {
     q.addEventListener('click', () => {
@@ -18,3 +18,12 @@
         }
     });
 });
+
+   const burger = document.getElementById('burger');
+   const nav = document.getElementById('nav');
+   const actions = document.getElementById('actions');
+
+   burger.addEventListener('click', () => {
+       nav.classList.toggle('show');
+       actions.classList.toggle('show');
+   });
